@@ -1,7 +1,9 @@
 @import url(/bootstrap/css/bootstrap.css);
 
 $background-color: #F6F8FA;
+$primary: #0074d9;
 
+//global
 body{
   background-color: $background-color;
 }
@@ -11,6 +13,15 @@ body{
   width: 36px;
   border-radius: 50%;
 }
+
+.card{
+  border-radius: 8px;
+}
+
+.btn{
+  border-radius: 4px;
+}
+
 
 //header
 .header{
@@ -41,10 +52,7 @@ box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.18);
 }
 
 
-.card{
-  border-radius: 8px;
-}
-
+//home
 .ticket-card{
   display: flex;
   flex-direction: column;
@@ -61,4 +69,80 @@ box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.18);
   margin-bottom: 16px;
   padding-bottom: 8px;
   --bs-border-color: #DFE1E6;
+}
+
+
+
+//laporan
+.employee-preview{
+  background: #F4F5F7;
+  border: 1px dashed #DFE1E6;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 100px;
+
+  img{
+    height: auto;
+    width: 100px;
+    object-fit: cover;
+  }
+
+  &.active{
+    background: #F4F9FF;
+    border: 1px dashed #4C9AFF;
+    border-radius: 4px;
+  }
+}
+
+.pelanggaran-preview{
+  padding: 16px;
+  background:#FFEBE6;
+  border: 1px dashed #FF8F73;
+  border-radius: 4px;
+}
+
+.stepper{
+  ol {
+    counter-reset: item;
+    margin-left: 2rem;
+    padding-left: 0;
+  }
+  li {
+    display: block;
+    margin-bottom: 24px;
+    margin-left: 2em;
+
+    &::before{
+      display: inline-block;
+      content: counter(item);
+      counter-increment: item;
+      width: 24px;
+      height: 24px;
+      padding-left: 7px;
+      margin-right: 8px;
+      background: #DEEBFF;
+      color: #4C9AFF;
+      border-radius: 4px;
+      margin-left: -3em;
+    }
+
+    &.active{
+      &::before{
+        background: #2684FF;
+        color: #fff;
+      }
+    } 
+
+    &.done{
+      
+      &::before{
+        font-family: "Font Awesome 6 Free";
+        font-weight: 400;
+        content:"\2713\0020";
+        background: #2684FF;
+        color: #fff;
+      }
+    } 
+  }
+ 
 }

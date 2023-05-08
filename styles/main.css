@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(/bootstrap/css/bootstrap.css);
 body {
   background-color: #F6F8FA;
@@ -7,6 +8,14 @@ body {
   height: 36px;
   width: 36px;
   border-radius: 50%;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.btn {
+  border-radius: 4px;
 }
 
 .header {
@@ -24,10 +33,6 @@ body {
   color: #0065FF;
 }
 
-.card {
-  border-radius: 8px;
-}
-
 .ticket-card {
   display: flex;
   flex-direction: column;
@@ -43,6 +48,66 @@ body {
   margin-bottom: 16px;
   padding-bottom: 8px;
   --bs-border-color: #DFE1E6;
+}
+
+.employee-preview {
+  background: #F4F5F7;
+  border: 1px dashed #DFE1E6;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 100px;
+}
+.employee-preview img {
+  height: auto;
+  width: 100px;
+  object-fit: cover;
+}
+.employee-preview.active {
+  background: #F4F9FF;
+  border: 1px dashed #4C9AFF;
+  border-radius: 4px;
+}
+
+.pelanggaran-preview {
+  padding: 16px;
+  background: #FFEBE6;
+  border: 1px dashed #FF8F73;
+  border-radius: 4px;
+}
+
+.stepper ol {
+  counter-reset: item;
+  margin-left: 2rem;
+  padding-left: 0;
+}
+.stepper li {
+  display: block;
+  margin-bottom: 24px;
+  margin-left: 2em;
+}
+.stepper li::before {
+  display: inline-block;
+  content: counter(item);
+  counter-increment: item;
+  width: 24px;
+  height: 24px;
+  padding-left: 7px;
+  margin-right: 8px;
+  background: #DEEBFF;
+  color: #4C9AFF;
+  border-radius: 4px;
+  margin-left: -3em;
+}
+.stepper li.active::before {
+  background: #2684FF;
+  color: #fff;
+}
+.stepper li.done::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  content: "✓ ";
+  background: #2684FF;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
