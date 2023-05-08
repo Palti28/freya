@@ -1,0 +1,64 @@
+@import url(/bootstrap/css/bootstrap.css);
+
+$background-color: #F6F8FA;
+
+body{
+  background-color: $background-color;
+}
+
+.img-avatar{
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+
+//header
+.header{
+  background: #FFFFFF;
+box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.18);
+
+.header-avatar{
+  &::after{
+    display: none;
+  }
+}
+}
+
+.navbar{
+  .navbar-nav{
+    .nav-item{
+      .nav-link{
+        &.active{
+          color: #0065FF;
+        }
+        &:hover{
+          color: #0065FF;
+
+        }
+      }
+    }
+  }
+}
+
+
+.card{
+  border-radius: 8px;
+}
+
+.ticket-card{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 1px solid #DFE1E6;
+  border-radius: 4px;
+
+  .ticket-status{
+    gap: 8px;
+  }
+}
+
+.activity-card{
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  --bs-border-color: #DFE1E6;
+}
