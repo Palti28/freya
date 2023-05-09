@@ -121,7 +121,8 @@
                         <span>Kementrian Dalam Negeri</span>
                         <div class="mt-3">
                           <!-- Button trigger modal -->
-                          <a class="text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <a class="text-primary cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#riwayatPelanggaran">
                             Riwayat Pelanggaran
                           </a>
                         </div>
@@ -176,7 +177,7 @@
                 <div class="row mt-3">
                   <div class="col">
                     <label for="exampleFormControlInput1">Waktu Pelanggaran</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    <input type="datetime-local" class="form-control" id="exampleFormControlInput1"
                       placeholder="name@example.com">
                   </div>
                 </div>
@@ -195,6 +196,14 @@
                   <a href="laporan-3.html" class="btn btn-primary">Lanjut ke unggah dokumen</a>
                 </div>
 
+                <div class="mt-3">
+                  <!-- Button trigger modal -->
+                  <a class="text-primary cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#kategoriPelanggaranInvalid">
+                    Demo kategori pelanggaran sudah pernah dilaporkan.
+                  </a>
+                </div>
+
               </div>
             </div>
           </div>
@@ -205,19 +214,108 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="riwayatPelanggaran" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex align-items-end">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="d-flex flex-row">
+            <img src="https://i.pravatar.cc/300" style="width: 100px; object-fit: cover;" class="me-3" alt="">
+            <div class="d-flex flex-column">
+              <h6>Afri Anita Bukit</h6>
+              <div class="opacity-75">
+                <span>NIP 1982651982730192 • NIK 1647091823</span> <br>
+                <span>Penyusun Program Anggaran dan Pelaporan</span> <br>
+                <span>Kementrian Dalam Negeri</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <table class="table border" style="border-radius: 4px;">
+              <thead>
+                <tr>
+                  <th scope="col">Nomor</th>
+                  <th scope="col">Pelapor</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Laporan: L-124 <span class="opacity-50">( 13 April 2023 )</span> <br>
+                    Aduan: A-462 <span class="opacity-50">( 17 April 2023 )</span>
+                  </td>
+                  <td class="align-middle">Auditya Nugroho</td>
+                  <td class="align-middle">
+                    <div class="badge text-bg-warning">
+                      Menunggu Verifikasi Bawaslu
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Laporan: L-58 <span class="opacity-50">( 2 Februari 2023 )</span> <br>
+                    Aduan: A-43 <span class="opacity-50">( 3 Maret 2023 )</span>
+                  </td>
+                  <td class="align-middle">Wahyu Firdaus</td>
+                  <td class="align-middle">
+                    <div class="badge text-bg-success">
+                      Pemberian Sanksi
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="kategoriPelanggaranInvalid" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
         <div class="modal-body">
-          ...
+          <div class="d-flex align-items-end">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="d-flex flex-row">
+            <i class="fa-solid fa-triangle-exclamation me-2"
+              style="color: #FF991F; font-size: 16px; margin-top: 6px;"></i>
+            <b class="m-0">Kategori pelanggaran telah dilaporkan.</b>
+          </div>
+
+          <div style="background: #EBECF0;
+          border-radius: 8px; padding: 8px; margin-top: 16px;">
+            <div>
+              No. Laporan: L-783
+            </div>
+            <div>
+              Status:
+              <div class="badge text-bg-warning">
+                Menunggu Verifikasi Bawaslu
+              </div>
+            </div>
+            <div>
+              Kategori Pelanggaran:
+              Kampanye/sosialisasi media sosial (posting, comment, share, like)
+            </div>
+          </div>
+
+          <div class="mt-3">Silahkan laporkan dengan kategori lain, atau batalkan pelaporan.</div>
+
+
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Batalkan Laporan</button>
+          <button type="button" class="btn btn-warning">Lanjutkan dengan Kategori Lain</button>
         </div>
       </div>
     </div>
