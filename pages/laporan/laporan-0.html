@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ========== Start Header ========== -->
+  <nav class="navbar navbar-expand-lg header">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/Brand-logo.svg" alt="">
+      </a>
+
+      <a class="navbar-toggler header-avatar border-0" href="#" data-bs-toggle="collapse" aria-label="Toggle navigation"
+        aria-controls="navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+        <img class="img-avatar me-2" src="https://i.pravatar.cc/300" alt="">
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inbox</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Statistik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Peraturan</a>
+          </li>
+
+        </ul>
+        <div class="d-flex">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle header-avatar d-flex align-items-center" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-avatar me-2" src="https://i.pravatar.cc/300" alt="">
+              <h6 class="m-0">Afri Anita Bukit</h6>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" style="width: 240px;">
+              <div class="px-3 py-1">
+                <div class="d-flex align-items-center mb-2">
+                  <img class="img-avatar me-1" src="https://i.pravatar.cc/300" alt="">
+                  <span>Afri Anita Bukit</span>
+                </div>
+                <small class="text-dark mb-1 opacity-75">
+                  NIP -
+                  198004191999122001 <br>
+                </small>
+                <small class="mb-1 opacity-75">
+                  NIK -
+                  121298519873012 <br>
+                </small>
+                <small class="opacity-75">
+                  Kementerian Dalam Negeri
+                </small>
+              </div>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <button class="dropdown-item d-flex align-items-center text-dark " type="button">
+                  <i class="fa-solid fa-wrench me-3"></i>
+                  Pengaturan
+                </button>
+              </li>
+
+              <li>
+                <button class="dropdown-item d-flex align-items-center" type="button">
+                  <i class="fa-solid fa-arrow-right-from-bracket me-3"></i>
+                  Keluar</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ========== End Header ========== -->
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="">
+        <h4>Laporan Baru</h4>
+      </div>
+      <!-- ========== Start laporan-0 ========== -->
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="text-center mt-3">Pilih Jenis Pelaporan</h5>
+            <div>
+              <div class="laporanType" id="netralitas" onclick="toggleLaporanType('netralitas')" role="option"
+                aria-checked="false">
+                <div class="indicator"></div>
+                <div class="icon"></div>
+                <h6 class="text-center mt-3">NETRALITAS</h6>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a href="../../index.html" class="btn btn-light me-3">Batal</a>
+              <a href="./laporan-1.html" class="btn btn-primary px-5">Lanjut</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========== End laporan-0 ========== -->
+
+
+    </div>
+  </div>
+
+
+  <script>
+    function toggleLaporanType(id) {
+      var type = document.getElementById(id);
+      if (type.getAttribute("aria-checked") == "false") {
+        type.setAttribute("aria-checked", true)
+      } else {
+        type.setAttribute("aria-checked", false)
+      }
+    }
+  </script>
+  <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/5273b91284.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
