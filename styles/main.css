@@ -167,4 +167,53 @@ body {
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
 }
 
+.videoLinkInputAction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.5;
+}
+.videoLinkInputAction i {
+  cursor: pointer;
+  margin-right: 8px;
+}
+.videoLinkInputAction i.add:hover {
+  color: #13bb13;
+}
+.videoLinkInputAction i.minus:hover {
+  color: #f32a2a;
+}
+
+.laporanTimeline {
+  border: 1px dashed #DFE1E6;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  overflow: auto;
+  padding: 16px;
+}
+.laporanTimeline .arrow {
+  font-size: 24px;
+  color: #B3BAC5;
+}
+.laporanTimeline .item {
+  display: flex;
+  flex-direction: row;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #DFE1E6;
+  min-width: 200px;
+}
+.laporanTimeline .item.active {
+  border: 1px solid #57D9A3;
+}
+.laporanTimeline .item.active i {
+  color: #00875A;
+}
+.laporanTimeline .item.active + .arrow {
+  color: #57D9A3;
+}
+
 /*# sourceMappingURL=main.css.map */

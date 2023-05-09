@@ -88,28 +88,78 @@
 
   <div class="container py-5">
     <div class="row">
-      <div class="">
-        <h4>Laporan Baru</h4>
-      </div>
 
-      <!-- ========== Start Laporan-2 ========== -->
+      <!-- ========== Start Laporan-5 ========== -->
       <div class="col-12 mt-3">
         <div class="card">
-          <div class="row py-5 justify-content-center p-0 p-md-5">
-            <div class="col-12 col-lg-4 stepper">
-              <ol>
-                <li class="done">Pilih Pegawai</li>
-                <li class="active">Rincian Pelanggaran</li>
-                <li>Unggah Dokumen</li>
-                <li>Periksa dan Konfirmasi</li>
-              </ol>
-            </div>
-            <div class="col-12 col-lg-8" style="max-width: 600px;">
-              <div class="px-3 p-lg-0">
-                <h6 class="mb-3">
-                  Tentukan kategori pelanggaran dan rekomendasi sanksi
-                </h6>
+          <div class="card-body">
+            <h3 class="text-center mt-2">Laporan Pelanggaran Netralitas Berhasil Ditambahkan</h3>
 
+            <div class="text-center mt-4">
+              <span>Nomor Laporan <a href="#" class="fw-bolder">L-889</a></span> <br>
+              <span>Dibuat pada tanggal 28 April 2023</span>
+            </div>
+
+            <div class="d-flex justify-content-center mt-5">
+              <button class="btn btn-light me-3">Buat Laporan Lain </button>
+              <a href="#" class="btn btn-primary">Lihat Semua Laporan</a>
+            </div>
+
+            <!-- ========== Start Laporan Timeline ========== -->
+            <div class="laporanTimeline mt-4 p-lg-4">
+              <div class="item active">
+                <!-- icon if any -->
+                <i class="fa-solid fa-circle-check me-2 mt-1"></i>
+                <div class="d-flex flex-column">
+                  <h6>Registrasi Laporan</h6>
+                  <span class="opacity-75">Selesai (28 April 2023)</span>
+                </div>
+              </div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+              <div class="item">
+                <!-- icon if any -->
+                <div class="d-flex flex-column">
+                  <h6>Registrasi Pengaduan</h6>
+                  <span class="opacity-75">Menunggu Verifikasi Bawaslu</span>
+                  <span class="opacity-75">Batas Waktu 07 Mei 2023 (10 hari lagi)</span>
+                </div>
+              </div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+              <div class="item">
+                <!-- icon if any -->
+                <div class="d-flex flex-column">
+                  <h6>Rekomendasi KASN</h6>
+                  <span class="opacity-75">Batas 10 hari dari Registrasi Pengaduan</span>
+                </div>
+              </div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+              <div class="item">
+                <!-- icon if any -->
+                <div class="d-flex flex-column">
+                  <h6>Pemberian Sanksi</h6>
+                  <span class="opacity-75">Batas Waktu 10 hari dari Rekomendasi KASN</span>
+                </div>
+              </div>
+            </div>
+            <!-- ========== End Laporan Timeline ========== -->
+
+
+            <!-- ========== Start Summary ========== -->
+            <div class="col-12 m-auto my-5 p-3" style="max-width: 600px; background: #F6F8FA;
+            border-radius: 8px;">
+              <div class="px-3 p-lg-0">
+
+                <div class="row mt-3">
+                  <div class="col">
+                    <h5>1. ASN TERLAPOR</h5>
+                  </div>
+                </div>
                 <div class="employee-preview active ">
                   <div class="d-flex p-3">
                     <img src="https://i.pravatar.cc/300" class="me-3" alt="">
@@ -131,37 +181,37 @@
                   </div>
                 </div>
 
-                <div class="row mt-3">
-                  <span>Periode Kejadian Pelanggaran</span>
-                  <div class="col">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Sebelum Penetapan Calon
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                        checked>
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Setelah Penetapan Calon
-                      </label>
-                    </div>
-                  </div>
+                <div class="py-3">
+                  <hr>
                 </div>
 
-                <div class="row mt-3">
+                <div class="row">
+                  <div class="col">
+                    <h5>2. RINCIAN PELANGGARAN</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="">Periode Kejadian Pelanggaran</label>
+                    <input type="text" class="form-control me-2" id="exampleFormControlInput1" placeholder="link video"
+                      value="Sebelum Penetapan Calon" disabled>
+                  </div>
+                </div>
+                <div class="row mt-2">
                   <div class="col">
                     <label for="Default select example" class="">Kategori Pelanggaran Netralitas</label>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Pilih Kategori Pelanggaran netralitas</option>
+                    <select class="form-select" aria-label="Default select example" disabled>
+                      <option selected>Kampanye/sosialisasi media sosial (posting, comment, share, like)</option>
                       <option value="1">Kampanye/sosialisasi media sosial (posting, comment, share, like)</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
                     </select>
                   </div>
+                </div>
+
+                <!-- ========== Start this section is collapsible ========== -->
+                <div class="collapse" id="collapseExample">
+
                   <div class="col-12 mt-2">
                     <div class="pelanggaran-preview">
                       <h6>Peraturan yang mengatur</h6>
@@ -172,44 +222,70 @@
                         kepentingan pribadi, kelompok, maupun golongan.</p>
                     </div>
                   </div>
-                </div>
 
-                <div class="row mt-3">
-                  <div class="col">
-                    <label for="exampleFormControlInput1">Waktu Pelanggaran</label>
-                    <input type="datetime-local" class="form-control" id="exampleFormControlInput1"
-                      placeholder="name@example.com">
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="exampleFormControlInput1">Waktu Pelanggaran</label>
+                      <input type="datetime-local" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com" disabled>
+                    </div>
                   </div>
-                </div>
-
-                <div class="row mt-3">
-                  <div class="col">
-                    <label for="exampleFormControlTextarea1" class="form-label">Deskripsi kejadian pelanggaran</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1"
-                      placeholder="Tuliskan secara ringkas tentang pelaporan anda" rows="3"></textarea>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="exampleFormControlTextarea1" class="form-label">Deskripsi kejadian pelanggaran</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1"
+                        placeholder="Tuliskan secara ringkas tentang pelaporan anda" rows="3" disabled></textarea>
+                    </div>
                   </div>
-                </div>
 
-                <div class="d-flex justify-content-end mt-3">
-                  <a href="laporan-1.html" class="btn btn-light me-auto">Kembali</a>
-                  <button class="btn btn-light me-3">Simpan Draft </button>
-                  <a href="laporan-3.html" class="btn btn-primary">Lanjut ke unggah dokumen</a>
-                </div>
+                  <div class="py-3">
+                    <hr>
+                  </div>
 
-                <div class="mt-3">
-                  <!-- Button trigger modal -->
-                  <a class="text-primary cursor-pointer" data-bs-toggle="modal"
-                    data-bs-target="#kategoriPelanggaranInvalid">
-                    Demo kategori pelanggaran sudah pernah dilaporkan.
+                  <div class="row">
+                    <div class="col">
+                      <h5>3. DOKUMEN BUKTI PENDUKUNG</h5>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="">Dokumen Bukti Pendukung</label>
+                      <h5>Screenshoot-218792.png</h5>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="">Link</label>
+                      <input type="email" class="form-control me-2" id="exampleFormControlInput1"
+                        placeholder="link video" value="https://www.youtube.com/ASdAD89sddf" disabled>
+                      <input type="email" class="form-control mt-1 me-2" id="exampleFormControlInput1"
+                        placeholder="link video" value="https://www.youtube.com/ASdAD89sddf" disabled>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="exampleFormControlTextarea1" class="form-label">Catatan</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1"
+                        placeholder="Ini merupakan laporan ke 2 terhadap ASN ini" rows="3" disabled></textarea>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- ========== End this section is collapsible ========== -->
+                <div class="text-center">
+                  <a class="btn text-primary mt-3" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Selengkapnya
                   </a>
                 </div>
-
               </div>
             </div>
+            <!-- ========== End Summary ========== -->
+
           </div>
         </div>
       </div>
-      <!-- ========== End Laporan-2 ========== -->
+      <!-- ========== End Laporan-5 ========== -->
     </div>
   </div>
 
@@ -272,50 +348,6 @@
               </tbody>
             </table>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="kategoriPelanggaranInvalid" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="d-flex align-items-end">
-            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="d-flex flex-row">
-            <i class="fa-solid fa-triangle-exclamation me-2"
-              style="color: #FF991F; font-size: 16px; margin-top: 6px;"></i>
-            <b class="m-0">Kategori pelanggaran telah dilaporkan.</b>
-          </div>
-
-          <div style="background: #EBECF0;
-          border-radius: 8px; padding: 8px; margin-top: 16px;">
-            <div>
-              No. Laporan: L-783
-            </div>
-            <div>
-              Status:
-              <div class="badge text-bg-warning">
-                Menunggu Verifikasi Bawaslu
-              </div>
-            </div>
-            <div>
-              Kategori Pelanggaran:
-              Kampanye/sosialisasi media sosial (posting, comment, share, like)
-            </div>
-          </div>
-
-          <div class="mt-3">Silahkan laporkan dengan kategori lain, atau batalkan pelaporan.</div>
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Batalkan Laporan</button>
-          <button type="button" class="btn btn-warning">Lanjutkan dengan Kategori Lain</button>
         </div>
       </div>
     </div>
