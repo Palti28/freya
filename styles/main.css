@@ -173,7 +173,6 @@ body {
   padding: 5px 8px;
   outline: none;
   white-space: nowrap;
-  -webkit-user-select: none;
   cursor: pointer;
   text-shadow: 1px 1px #fff;
   font-size: 10pt;
@@ -268,6 +267,70 @@ body {
 }
 .table-nav .nav .nav-item .nav-link.active {
   color: #0065FF;
+}
+
+input[type=radio] {
+  border: 1px solid #DFE1E6;
+  display: none;
+}
+input[type=radio]:not(:disabled) ~ label {
+  cursor: pointer;
+}
+input[type=radio]:disabled ~ label {
+  color: #bcc2bf;
+  border-color: #bcc2bf;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+label {
+  text-align: center;
+  height: 100%;
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #DFE1E6;
+  width: 170px;
+  height: 200px;
+  padding: 16px;
+  display: block;
+  background: white;
+  border-radius: 20px;
+  padding: 1rem;
+  border: 1px solid #DFE1E6;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+label .icon {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 92px;
+  border-radius: 50%;
+  background-color: #F8F8F8;
+}
+label .icon img {
+  height: 60px;
+  width: 60px;
+}
+
+input[type=radio]:checked + label {
+  background: #343B4A;
+  color: white;
+}
+input[type=radio]:checked + label .icon {
+  background-color: #fff;
+}
+
+input[type=radio]#control_05:checked + label {
+  background: red;
+  border-color: red;
+}
+
+p {
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=main.css.map */

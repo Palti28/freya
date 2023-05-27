@@ -88,79 +88,89 @@
 
   <div class="container py-5">
     <div class="row">
-      <div class="">
-        <h4>Laporan Baru</h4>
-      </div>
-      <!-- ========== Start laporan-0 ========== -->
+
+
+      <!-- ========== Start Laporan-3 ========== -->
       <div class="col-12 mt-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="text-center mt-3">Pilih Jenis Pelaporan</h5>
-            <div>
-              <div class="d-flex flex-md-row flex-column justify-content-around">
-
-                <div>
-                  <input type="radio" id="control_02" name="select" value="2">
-                  <label for="control_02">
-                    <div class="indicator"></div>
-                    <div class="icon"><img src="../../assets/Laporan/netralitas.png"></div>
-                    <h6 class="text-center mt-3">Netralitas</h6>
-                  </label>
-                </div>
-
-                <div>
-                  <input type="radio" id="control_01" name="select" value="1" checked>
-                  <label for="control_01">
-                    <div class="indicator"></div>
-                    <div class="icon"> <img src="../../assets/Laporan/disiplin.png" alt=""></div>
-                    <h6 class="text-center mt-3">Disiplin</h6>
-                  </label>
-                </div>
-                <div>
-                  <input type="radio" id="control_01" name="select" value="1" checked>
-                  <label for="control_01">
-                    <div class="indicator"></div>
-                    <div class="icon"> <img src="../../assets/Laporan/kode-etik.png" alt=""></div>
-                    <h6 class="text-center mt-3">Kode Etik</h6>
-                  </label>
-                </div>
-                <div>
-                  <input type="radio" id="control_01" name="select" value="1" checked>
-                  <label for="control_01">
-                    <div class="indicator"></div>
-                    <div class="icon"> <img src="../../assets/Laporan/pemberhentian.png" alt=""></div>
-                    <h6 class="text-center mt-3">Pemberhentian</h6>
-                  </label>
-                </div>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex align-items-center ">
+                <i class="fa-solid fa-users me-2"></i>
+                <h5 class="m-0"> User Management </h5>
               </div>
-              <div>
-              </div>
-              <div class="d-flex justify-content-center">
-                <a href="../../index.html" class="btn btn-light me-3">Batal</a>
-                <a href="./laporan-1.html" class="btn btn-primary px-5">Lanjut</a>
+              <a href="./create-user.html" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i> Tambah User baru
+              </a>
+            </div>
+
+            <div class="mt-3">
+              <div class="input-group mb-3 mt-3 mt-lg-0" style="width: 280px;">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control" placeholder="Cari nama user" aria-label="Username"
+                  aria-describedby="basic-addon1">
               </div>
             </div>
+
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Nama</th>
+                    <th scope="col">NIK</th>
+                    <th scope="col">Jabatan</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Rio Setriawan</td>
+                    <td>31765123923523</td>
+                    <td>Badan Kepegawaian Negara</td>
+                    <td>Rio@gmail.com</td>
+                    <td>
+                      <button class="btn btn-sm btn-warning me-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                      <button class="btn btn-sm btn-danger"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Afri Sianipar</td>
+                    <td>1726198273812352</td>
+                    <td>Badan Kepegawaian Negara</td>
+                    <td>Afri@gmail.com</td>
+                    <td>
+                      <button class="btn btn-sm btn-warning me-2"><i class="fa-regular fa-pen-to-square"></i></button>
+                      <button class="btn btn-sm btn-danger"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation"
+                class="d-flex flex-lg-row justify-content-between  flex-column align-items-baseline">
+                <div class="text-center text-lg-start w-100 mb-3 m-lg-0"> Menampilkan 5 - 5 dari 5 item</div>
+                <ul class="pagination justify-content-center justify-content-lg-end w-100">
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-left"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+
+
           </div>
         </div>
-        <!-- ========== End laporan-0 ========== -->
-
-
       </div>
+      <!-- ========== End Laporan-3 ========== -->
     </div>
+  </div>
 
 
-    <script>
-      function toggleLaporanType(id) {
-        var type = document.getElementById(id);
-        if (type.getAttribute("aria-checked") == "false") {
-          type.setAttribute("aria-checked", true)
-        } else {
-          type.setAttribute("aria-checked", false)
-        }
-      }
-    </script>
-    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/5273b91284.js" crossorigin="anonymous"></script>
+  <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/5273b91284.js" crossorigin="anonymous"></script>
 
 </body>
 
