@@ -130,8 +130,10 @@
                     <td>Badan Kepegawaian Negara</td>
                     <td>Rio@gmail.com</td>
                     <td>
-                      <button class="btn btn-sm btn-warning me-2"><i class="fa-regular fa-pen-to-square"></i></button>
-                      <button class="btn btn-sm btn-danger"><i class="fa-regular fa-trash-can"></i></button>
+                      <a class="btn btn-sm btn-warning me-2" href="./edit-user.html"><i
+                          class="fa-regular fa-pen-to-square"></i></a>
+                      <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteUser"><i
+                          class="fa-regular fa-trash-can"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -140,8 +142,10 @@
                     <td>Badan Kepegawaian Negara</td>
                     <td>Afri@gmail.com</td>
                     <td>
-                      <button class="btn btn-sm btn-warning me-2"><i class="fa-regular fa-pen-to-square"></i></button>
-                      <button class="btn btn-sm btn-danger"><i class="fa-regular fa-trash-can"></i></button>
+                      <a class="btn btn-sm btn-warning me-2" href="./edit-user.html"><i
+                          class="fa-regular fa-pen-to-square"></i></a>
+                      <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteUser"><i
+                          class="fa-regular fa-trash-can"></i></button>
                     </td>
                   </tr>
 
@@ -168,6 +172,36 @@
     </div>
   </div>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="deleteUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex align-items-end">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="d-flex flex-row">
+            <i class="fa-solid fa-triangle-exclamation me-2" style="color: red; font-size: 16px; margin-top: 6px;"></i>
+            <b class="m-0">Hapus Data User</b>
+          </div>
+          <div class="mt-3">Apakah anda yakin ingin menhapusd ata user ini?</div>
+
+          <div style="background: #EBECF0;
+          border-radius: 8px; padding: 8px; margin-top: 16px;">
+            <div>Nama: Rio Setriawan</div>
+            <div>NIK: 1287381729381723</div>
+            <div>Jabatan: Badan Kepegawaian Negara</div>
+            <div>Email: rio@gmail.com</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Batal</button>
+          <button type="button" class="btn btn-danger">Hapus</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/5273b91284.js" crossorigin="anonymous"></script>
