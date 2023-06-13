@@ -332,4 +332,23 @@ p {
   font-weight: 900;
 }
 
+#peraturan .accordion-button:not(.collapsed) {
+  color: #172B4D;
+  background-color: white;
+}
+#peraturan .nav-tabs {
+  border-bottom: 0px;
+}
+#peraturan .nav-tabs .nav-item .nav-link {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: #172B4D;
+}
+#peraturan .nav-tabs .nav-item .nav-link.active {
+  color: #0074d9;
+  font-weight: 500;
+  border-bottom: 2px solid #0074d9;
+}
+
 /*# sourceMappingURL=main.css.map */

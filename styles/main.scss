@@ -85,8 +85,6 @@ box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.18);
   --bs-border-color: #DFE1E6;
 }
 
-
-
 //laporan
 .laporanType{
   border-radius: 16px;
@@ -95,9 +93,6 @@ box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.18);
   width: 170px;
   height: 200px;
   padding: 16px;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   color: black;
   cursor: pointer;
 
@@ -131,7 +126,6 @@ box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.18);
 
   }
 }
-
 
 .employee-preview{
   background: #F4F5F7;
@@ -295,7 +289,6 @@ box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.18);
     border: 1px solid #DFE1E6;
     min-width: 200px;
 
-
     &.active{
       border: 1px solid #57D9A3;
       i{
@@ -324,13 +317,6 @@ box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.18);
     }
   }
 }
-
-
-// // display: flex;
-// // flex-direction: column;
-// // align-items: center;
-// color: black;
-// cursor: pointer;
 
 input[type="radio"] {
   border: 1px solid #DFE1E6;
@@ -380,38 +366,46 @@ input[type="radio"] {
   }
 }
 
-
 input[type="radio"]:checked + label {
   background: #343B4A;
   color: hsla(215, 0%, 100%, 1);
   .icon{
-    
     background-color: #fff;
-   
-   
   }
-  // &::after {
-  //   color: hsla(215, 5%, 25%, 1);
-  //   font-family: FontAwesome;
-  //   content: "\f00c";
-  //   font-size: 24px;
-  //   position: absolute;
-  //   top: -25px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   height: 50px;
-  //   width: 50px;
-  //   line-height: 50px;
-  //   text-align: center;
-  //   border-radius: 50%;
-  //   background: white;
-
-  // }
 }
+
 input[type="radio"]#control_05:checked + label {
   background: red;
   border-color: red;
 }
+
 p {
   font-weight: 900;
+}
+
+// Peraturan
+
+#peraturan{
+
+  .accordion-button:not(.collapsed){
+    color: #172B4D;
+    background-color: white;
+  }
+  
+  .nav-tabs{
+    border-bottom: 0px;
+    .nav-item{
+      .nav-link{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        color: #172B4D;
+        &.active{
+          color: $primary;
+          font-weight:500;
+          border-bottom: 2px solid $primary;
+        }
+      }
+    }
+  }
 }
